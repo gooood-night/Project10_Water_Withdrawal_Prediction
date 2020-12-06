@@ -16,7 +16,7 @@ HDI
 Hossein
 hydrological
 Hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 hyperparemeters
 importances

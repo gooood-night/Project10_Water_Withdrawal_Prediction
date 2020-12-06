@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/d3e58a000203fde8a9d3c0e0b3eb9996fce2eab3/" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/e9734afdcc2be9151958b8259e1485c96600ab29/" />
 
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/d3e58a000203fde8a9d3c0e0b3eb9996fce2eab3/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/e9734afdcc2be9151958b8259e1485c96600ab29/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/d3e58a000203fde8a9d3c0e0b3eb9996fce2eab3/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/e9734afdcc2be9151958b8259e1485c96600ab29/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'CEE 498 Project 10: Water Withdrawal Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/d3e58a000203fde8a9d3c0e0b3eb9996fce2eab3/))
+([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/e9734afdcc2be9151958b8259e1485c96600ab29/))
 was automatically generated
-from [gooood-night/Project10_Water_Withdrawal_Prediction@d3e58a0](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/d3e58a000203fde8a9d3c0e0b3eb9996fce2eab3)
+from [gooood-night/Project10_Water_Withdrawal_Prediction@e9734af](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/e9734afdcc2be9151958b8259e1485c96600ab29)
 on December 6, 2020.
 </em></small>
 
@@ -116,11 +116,6 @@ on December 6, 2020.
   <small>
      Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
   </small>
-
-
-
-## Abstract {.page_break_before}
-
 
 
 
