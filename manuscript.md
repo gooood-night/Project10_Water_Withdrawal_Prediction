@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'CEE 498 Project 10: Water Withdrawal Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/))
+([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/))
 was automatically generated
-from [gooood-night/Project10_Water_Withdrawal_Prediction@bf0d429](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/bf0d429a8f6544fdd644c71746b0691461a11a73)
+from [gooood-night/Project10_Water_Withdrawal_Prediction@c0b2982](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/c0b29828aeb46bfa447a0d077792b01195d380c8)
 on December 6, 2020.
 </em></small>
 
@@ -150,8 +150,7 @@ Although the water withdrawal data during 2013-2017 of many African and west Asi
 
 We can visualize the missing data in the features by using an msno matrix. 
 
-![**Missing Data Matrix**](https://user-images.githubusercontent.com/71046085/101259860-1ad33680-36f1-11eb-9512-d677c4d0afb0.png)
-{#fig: missing_data width="8in"}
+![**Missing Data Matrix**](https://user-images.githubusercontent.com/71046085/101259860-1ad33680-36f1-11eb-9512-d677c4d0afb0.png){#fig: missing_data width="8in"}
 
 As we can see above from the msno matrix, the features with the least amount of missing data are cultivated area, GDP per capita, long-term average annual precipitation, population density, total area of the country, and total renewable water resources. This information helps us select which features to include in the model. 
 
@@ -164,18 +163,20 @@ The figure below shows how the 11 independent variables correlate with the targe
 As mentioned previously most of the values for total water withdrawal per capita around below 500 m^3/inhab/yr. To further explore if any features correlate with high and low values of total water withdrawal the average value for each feature was found for each country over the different time periods. Then the data was broken up into countries that have values below 400 m^3/inhab/yr and above that value. Then we looked at the distribution of the features above and below to see if any conclusions could be made about how the features relate to the total water withdrawal. Below are histograms of the features that correspond to countries with an average water withdrawal per capita less than 400. 
 
 
-![](https://user-images.githubusercontent.com/71046085/101262710-490f4100-3706-11eb-8378-ba2dfff48d62.png){fig: corr_matrix width="6in"}
-![](https://user-images.githubusercontent.com/71046085/101262745-81168400-3706-11eb-8bcc-d05512a2208f.png){fig: corr_matrix width="5in"}
-![](https://user-images.githubusercontent.com/71046085/101262764-94295400-3706-11eb-9030-375fb2650999.png){fig: corr_matrix width="6in"}
-![**Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita less than 400 m^3/inhab/yr**](https://user-images.githubusercontent.com/71046085/101262768-9f7c7f80-3706-11eb-874e-c221a8b0fc47.png){fig: 400_ corr_matrix width="6in"}
+![](https://user-images.githubusercontent.com/71046085/101262710-490f4100-3706-11eb-8378-ba2dfff48d62.png){fig: corr_matrix width="5.5in"}
+![](https://user-images.githubusercontent.com/71046085/101262745-81168400-3706-11eb-8bcc-d05512a2208f.png){fig: corr_matrix width="5.5in"}
+![](https://user-images.githubusercontent.com/71046085/101262764-94295400-3706-11eb-9030-375fb2650999.png){fig: corr_matrix width="5.5in"}
+
+![**Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita less than 400 m^3/inhab/yr**](https://user-images.githubusercontent.com/71046085/101262768-9f7c7f80-3706-11eb-874e-c221a8b0fc47.png){fig: 400_ corr_matrix width="5.5in"}
 
 
 Below are histograms of the features that correspond to countries with an average water withdrawal per capita greater than 400. 
 
-![](https://user-images.githubusercontent.com/71046085/101263023-0484a500-3708-11eb-966c-5519797a8146.png){#fig: corr_matrix width="6in"}
-![](https://user-images.githubusercontent.com/71046085/101263025-05b5d200-3708-11eb-9b4e-bde36fda62c9.png){fig: corr_matrix width="6in"}
-![](https://user-images.githubusercontent.com/71046085/101263027-064e6880-3708-11eb-918c-79874eb90be4.png){fig: corr_matrix width="6in"}
-![**Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita more than 400 m^3/inhab/yr**](https://user-images.githubusercontent.com/71046085/101263029-077f9580-3708-11eb-9aed-73d07537a238.png){fig: more corr_matrix width="6in"}
+![](https://user-images.githubusercontent.com/71046085/101263023-0484a500-3708-11eb-966c-5519797a8146.png){#fig: corr_matrix width="5.5in"}
+![](https://user-images.githubusercontent.com/71046085/101263025-05b5d200-3708-11eb-9b4e-bde36fda62c9.png){fig: corr_matrix width="5.5in"}
+![](https://user-images.githubusercontent.com/71046085/101263027-064e6880-3708-11eb-918c-79874eb90be4.png){fig: corr_matrix width="5.5in"}
+
+![**Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita more than 400 m^3/inhab/yr**](https://user-images.githubusercontent.com/71046085/101263029-077f9580-3708-11eb-9aed-73d07537a238.png){fig: more corr_matrix width="5.5in"}
 
 Comparing the set of histograms for the countries that have an average water withdrawal lower than 400 m^3/inhab/year and those that have higher than 400 there are some differences that could help predict the average water withdrawal. The agricultural water withdrawal, population density, cultivated area, and GDP tends to be higher for countries with a higher average water withdrawal than 500. Total area of the country, municipal water withdrawal tends to be higher for countries with a lower average water withdrawal than 500.
 
