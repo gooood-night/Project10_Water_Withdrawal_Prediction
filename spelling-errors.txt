@@ -1,6 +1,6 @@
 algorthims
 AQUASTAT
-capita
+Capita
 Champaign
 dataframe
 dataset
@@ -23,6 +23,7 @@ importances
 indpendent
 inhab
 inversed
+kggunde
 MSE
 msno
 overfitting
