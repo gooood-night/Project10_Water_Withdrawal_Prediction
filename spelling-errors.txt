@@ -1,6 +1,6 @@
 algorthims
 AQUASTAT
-Capita
+capita
 Champaign
 dataframe
 dataset
@@ -15,8 +15,8 @@ Gunderson
 HDI
 Hossein
 hydrological
-Hyperparameter
-Hyperparameters
+hyperparameter
+hyperparameters
 hyperparamters
 hyperparemeters
 importances
@@ -27,7 +27,7 @@ kggunde
 MSE
 msno
 overfitting
-Preprocessing
+preprocessing
 regressor
 ReLU
 RFR

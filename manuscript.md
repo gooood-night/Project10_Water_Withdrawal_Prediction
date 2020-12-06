@@ -59,11 +59,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
 
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -95,9 +95,9 @@ title: 'CEE 498 Project 10: Water Withdrawal Prediction'
 
 <small><em>
 This manuscript
-([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/))
+([permalink](https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/))
 was automatically generated
-from [gooood-night/Project10_Water_Withdrawal_Prediction@2086c43](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/2086c435af56210ad41040bbda505d9c1220aed7)
+from [gooood-night/Project10_Water_Withdrawal_Prediction@bf0d429](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/bf0d429a8f6544fdd644c71746b0691461a11a73)
 on December 6, 2020.
 </em></small>
 
@@ -317,9 +317,3 @@ Sahour, Hossein, et al. “A Comparative Analysis of Statistical and Machine Lea
 
 Villarin, M. C., & Rodriguez-Galiano, V. F. (2019). Machine learning for modeling water demand. Journal of Water Resources Planning and Management, 145(5), 04019017.
 
-
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
