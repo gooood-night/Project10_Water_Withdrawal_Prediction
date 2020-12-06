@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Kathryn Grace Gunderson" />
   <meta name="author" content="Yanan Chen" />
-  <meta name="dcterms.date" content="2020-12-03" />
+  <meta name="dcterms.date" content="2020-12-06" />
   <meta name="keywords" content="water withdrawal per capita, neural network, random forest" />
   <title>CEE 498 Project 10: Water Withdrawal Prediction</title>
   <style>
@@ -91,8 +91,8 @@
   <meta name="citation_title" content="CEE 498 Project 10: Water Withdrawal Prediction" />
   <meta property="og:title" content="CEE 498 Project 10: Water Withdrawal Prediction" />
   <meta property="twitter:title" content="CEE 498 Project 10: Water Withdrawal Prediction" />
-  <meta name="dc.date" content="2020-12-03" />
-  <meta name="citation_publication_date" content="2020-12-03" />
+  <meta name="dc.date" content="2020-12-06" />
+  <meta name="citation_publication_date" content="2020-12-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -109,9 +109,9 @@
   <meta name="citation_fulltext_html_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/" />
   <meta name="citation_pdf_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/" />
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/" />
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -132,10 +132,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/">permalink</a>)
+(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/4f834d3aff6094f4d3e39c0211d3b53d50d16842">gooood-night/Project10_Water_Withdrawal_Prediction@4f834d3</a>
-on December 3, 2020.
+from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168">gooood-night/Project10_Water_Withdrawal_Prediction@83a69a3</a>
+on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -153,38 +153,54 @@ Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
 <h2 class="page_break_before" id="abstract">Abstract</h2>
 <h2 id="introduction">1. Introduction</h2>
 <h3 id="background">1.1 Background</h3>
-<p>Water is a kind of crucial and finite resources. Only one percent of the water in the world is readily accessible for human use. With the increase of population and the development of society and economics, many countries are faced with water scarcity. In recent years, climate change and land use changes have affected hydrological processes, bringing high uncertainty to precipitation and river flow. Consequently, the water supply systems are under huge pressure. In this case, improving the accuracy of water consumption prediction is of vital importance, which is not only necessary to design new water facilities, but also essential to optimize the operation and management of the existing water supply systems.</p>
-<p>Water consumption is affected many factors, such as water availability, climate, demographics, economics, etc. Machine learning methods have the ability to capture the correlations between independent variables and the non-linear relationships between features and the target variables, so ML methods have been widely applied to complex water consumption modeling and water demand prediction. Villarin and Rodriguez-Galiano (2019) applied two tree-based machine learning methods, including classification and regression trees (CART) and random forest (RF), to the water demand modeling in the city of Seville, Spain at the census tract level. They choose 16 variables that represent the sociodemographic and urban building characteristics of urban area as the independent variables to predict water consumption per capita. The results show that RF model performs better than CART model.</p>
+<p>Water is a crucial and finite resource. Only one percent of the water in the world is readily accessible for human use. With the increase of population and the development of society and economics, many countries are faced with water scarcity. In recent years, climate change and land use changes have affected hydrological processes, bringing high uncertainty to precipitation and river flow. Consequently, the water supply systems are under huge pressure. In this case, improving the accuracy of water consumption prediction is of vital importance, which is not only necessary to design new water facilities, but also essential to optimize the operation and management of the existing water supply systems.</p>
+<p>Water consumption is affected by many factors, such as water availability, climate, demographics, economics, etc. Machine learning (ML) methods have the ability to capture the correlations between independent variables and the non-linear relationships between features and target variables, so ML methods have been widely applied to complex water consumption modeling and water demand prediction. Villarin and Rodriguez-Galiano (2019) applied two tree-based machine learning methods, including classification and regression trees (CART) and random forest (RF), to the water demand modeling in the city of Seville, Spain at the census tract level. They chose 16 variables that represent the sociodemographic and urban building characteristics of urban area as the independent variables to predict water consumption per capita. The results show that the RF model performs better than the CART model.</p>
+<p>In another study done by Sahour et al. (2020), scientists used machine learning methods to predict groundwater salinity, which is an affect of excessive groundwater withdrawal. Their study is relevant because it gives a layout of how to setup different machine learning algorthims for hydrological data with many indpendent variables. They tested three methods extreme gradient boosting, deep neural network, and multiple linear regression. They had a small dataset of 162 observations therefore extreme gradient boosting gave the more accurate model. The scope of their study was concentrated in one 10,000 km squared location, while we plan to look at global data for our project, therefore their study may not transfer well to our data.</p>
 <h3 id="objective">1.2 Objective</h3>
-<p>The goal of the project is to use machine learning algorithms to predict water withdrawal per capital in the world. Compared with previous, our project will use worldwide data at national scale rather than the data from one city or one country, and we will involve more independent variables such as precipitation, renewable water resources, GDP per capital in order to improve the prediction results. Meanwhile, we plan to use two machine learning algorithms: Neural networks and Random Forest to predict the target variable respectively and compare the model performances. We hope to find a ML method that produces more accurate predictions of water withdrawal, which allows improvement of water resources planning and management.</p>
+<p>The goal of the project was to use machine learning algorithms to predict water withdrawal per capita in the world. Compared with previous studies, our project used worldwide data at national scale rather than data from one city or one country, and we involved more independent variables such as water stress, renewable water resources, and GDP per capita in order to improve the prediction results. Meanwhile, we planned to test two machine learning algorithms: Neural Networks and Random Forest to predict the target variable and compare the model performances. The goal was to find a ML method that produced accurate predictions of water withdrawal, which would allow for improvement of water resources planning and management.</p>
 <h2 id="data">2. Data</h2>
 <h3 id="raw-data">2.1 Raw Data</h3>
-<p>The raw dataset was obtained from FAO’s Global Information System on Water and Agriculture (AQUASTAT). AQUASTAT provides free access to over 180 variables and indicators by country from 1960s, which are mainly related to water resources, water uses and agricultural water management.
-In this project, we intend to predict annual total water withdrawal per capita and select 13 variables as features based on previous studies, which provide information about geography, economic, climate, water resources utilities, etc. So, the raw dataset used includes 1 dependent variable and 13 features that span 200 countries across 8 different five-year periods from 1978 to 2017.</p>
+<p>The raw dataset was obtained from FAO’s Global Information System on Water and Agriculture (AQUASTAT). AQUASTAT provides free access to over 180 variables and indicators by country dating back to the 1960s. The variables are mainly related to water resources, water uses and agricultural water management.
+In this project, we intend to predict annual total water withdrawal per capita and select 13 variables as features based on previous studies, which provide information about geography, economy, climate, water resource utilities, etc. After variable selection, the raw dataset used includes 1 dependent variable and 13 features that span 200 countries across 8 different five-year periods from 1978 to 2017.</p>
 <h3 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h3>
-<p>This project aims at predicting water withdrawal per capita. Water withdrawal per capita is affected many factors, such as water availability, climate, demographics, economics, etc. Let’s first look at the water withdrawal per capita.</p>
-<div id="fig:fc91091d-c8c8-43ce-9184-1b219b0165aa" class="fignos">
+<p>Our project aims at predicting water withdrawal per capita. Water withdrawal per capita is affected by many factors, such as water availability, climate, demographics, economics, etc. Let’s first look at the water withdrawal per capita.</p>
+<div id="fig:ab3d5147-2a57-4c8a-bf48-f5dbc174839f" class="fignos">
 <figure>
 <img src="images/histogram_of_total_water_withdrawal.png" style="width:4in" alt="" /><figcaption><span>Figure 1:</span> <strong>Histogram of the target variable</strong></figcaption>
 </figure>
 </div>
-<p>As shown in Figure 1, the distribution of total water withdrawal is not symmetric. For 75% entries, the annual total water withdrawal per capita is less than 704.7 m3/inhab/year, while the maximum annual total water withdrawal per capita is 5739 m3/inhab/year. The difference between countries is huge. Let us closely look at the average annual total water withdrawal per capita during 2013-2017 in each country.</p>
-<div id="fig:53373a49-f64d-4f4d-8f44-5f281a2f3f5a" class="fignos">
+<p>As shown in Figure 1, the distribution of total water withdrawal is not symmetric. For 75% of the entries, the annual total water withdrawal per capita is less than 704.7 m3/inhab/year, while the maximum annual total water withdrawal per capita is 5739 m3/inhab/year. The difference between countries is huge. Let us closely look at the average annual total water withdrawal per capita during 2013-2017 in each country.</p>
+<div id="fig:1a0c927e-81a1-488a-b9f2-8746d5fb1e0d" class="fignos">
 <figure>
 <img src="images/world.png" style="width:7in" alt="" /><figcaption><span>Figure 2:</span> <strong>Total water withdrawal per capita in the world</strong></figcaption>
 </figure>
 </div>
-<p>Although the water withdrawal data during 2013-2017 of many African and west Asian countries are missing, we can find that the water withdrawal per capita varies among countries from Figure 2. For most countries, the total water withdrawal per capita is below 500 m3/inhab/year, but for Canada, the United States, Kazakhstan and Uzbekistan, the value is above 1000 m3/inhab/year.</p>
-<p>The raw dataset includes 13 numerical independent variables. However, there are many missing values in the original dataset. It is found that “Human Development Index (HDI)” and “Total population with access to safe drinking-water” are two variables with most missing values. Meanwhile, the correlation coefficients between the target variables and these two independent variables are small. So, these two variables are dropped. After further data cleaning, finally we have a dataset with 410 samples and 11 numerical features and 2 categorical features for predicting water withdrawal per capita.</p>
-<p>Figure 3 shows how the 11 independent variables correlate with the target variable and each other. As can be seen, “Long-term average annual precipitation in volume (10^9 m3/year)” and “Total renewable water resources (10^9 m3/year)” are highly related with the correlation coefficient of 0.97. We need to remove one of them for ML model input.</p>
-<div id="fig:0f229935-d005-4dfa-9621-9df5edace276" class="fignos">
+<p>Although the water withdrawal data during 2013-2017 of many African and west Asian countries is missing, we can find that the water withdrawal per capita varies among countries from Figure 2. For most countries, the total water withdrawal per capita is below 500 m3/inhab/year, but for Canada, the United States, Kazakhstan and Uzbekistan, the value is above 1000 m3/inhab/year.</p>
+<p>We can visualize the missing data in the features by using an msno matrix.</p>
+<p><img src="https://user-images.githubusercontent.com/71046085/101259860-1ad33680-36f1-11eb-9512-d677c4d0afb0.png" alt="Missing Data Matrix" />
+){#fig: missing_data width=“8in”}</p>
+<p>As we can see above from the msno matrix, the features with the least amount of missing data are cultivated area, GDP per capita, long-term average annual precipitation, population density, total area of the country, and total renewable water resources. This information helps us select which features to include in the model.</p>
+<p>The raw dataset includes 13 numerical independent variables. It is found that “Human Development Index (HDI)” and “Total population with access to safe drinking-water” are two variables with the most missing values. Meanwhile, the correlation coefficients between the target variables and these two independent variables are small. So, these two variables are dropped. After further data cleaning, finally we have a dataset with 410 samples and 11 numerical features and 2 categorical features for predicting water withdrawal per capita.</p>
+<p>The figure below shows how the 11 independent variables correlate with the target variable and each other. As can be seen, “Long-term average annual precipitation in volume (10^9 m3/year)” and “Total renewable water resources (10^9 m3/year)” are highly related with the correlation coefficient of 0.97. We need to remove one of them for ML model input.</p>
+<div id="fig:04e92cd4-9274-4fac-9977-e9a66a2c23e3" class="fignos">
 <figure>
 <img src="images/variables_correlation_matrix.png" style="width:6.5in" alt="" /><figcaption><span>Figure 3:</span> <strong>Correlation coefficient</strong></figcaption>
 </figure>
 </div>
+<p>As mentioned previously most of the values for total water withdrawal per capita around below 500 m^3/inhab/yr. To further explore if any features correlate with high and low values of total water withdrawal the average value for each feature was found for each country over the different time periods. Then the data was broken up into countries that have values below 400 m^3/inhab/yr and above that value. Then I looked at the distribution of the features above and below to see if any conclusions could be made about how the features relate to the total water withdrawal. Below are histograms of the features that correspond to countries with an average water withdrawal per capita less than 400.</p>
+<p><img src="https://user-images.githubusercontent.com/71046085/101262710-490f4100-3706-11eb-8378-ba2dfff48d62.png" id="fig:" style="width:6.5in" alt="**Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita less than 400" />
+<img src="https://user-images.githubusercontent.com/71046085/101262745-81168400-3706-11eb-8bcc-d05512a2208f.png" id="fig:" style="width:6.5in" />
+<img src="https://user-images.githubusercontent.com/71046085/101262764-94295400-3706-11eb-9030-375fb2650999.png" id="fig:" style="width:6.5in" />
+<img src="https://user-images.githubusercontent.com/71046085/101262768-9f7c7f80-3706-11eb-874e-c221a8b0fc47.png" id="fig:" style="width:6.5in" /></p>
+<p>Below are histograms of the features that correspond to countries with an average water withdrawal per capita greater than 400.</p>
+<p><img src="https://user-images.githubusercontent.com/71046085/101263023-0484a500-3708-11eb-966c-5519797a8146.png" id="fig:" style="width:6.5in" alt="Screen Shot 2020-12-05 at 2 35 33 PM" />
+<img src="https://user-images.githubusercontent.com/71046085/101263025-05b5d200-3708-11eb-9b4e-bde36fda62c9.png" id="fig:" style="width:6.5in" alt="Screen Shot 2020-12-05 at 2 35 52 PM" />
+<img src="https://user-images.githubusercontent.com/71046085/101263027-064e6880-3708-11eb-918c-79874eb90be4.png" id="fig:" style="width:6.5in" alt="Screen Shot 2020-12-05 at 2 36 09 PM" />
+<img src="https://user-images.githubusercontent.com/71046085/101263029-077f9580-3708-11eb-9aed-73d07537a238.png" id="fig:" style="width:6.5in" alt="Screen Shot 2020-12-05 at 2 36 18 PM" /></p>
+<p>Comparing the set of histograms for the countries that have an average water withdrawal lower than 400 m^3/inhab/year and those that have higher than 400 there are some differences that could help predict the average water withdrawal. The agricultural water withdrawal, population density, cultivated area, and GDP tends to be higher for countries with a higher average water withdrawal than 500. Total area of the country, municipal water withdrawal tends to be higher for countries with a lower average water withdrawal than 500.</p>
 <h2 id="methods">3. Methods</h2>
 <h3 id="neural-network">3.1 Neural Network</h3>
-<p>Predicting water withdrawal per capita is a complex problem considering various affecting factors and non-linear relationships. We choose neural network to train our model in this project. Artificial Neural Networks have the ability to learn and model non-linear relationships, which is really important for water withdrawal prediction problem.</p>
+<p>Predicting water withdrawal per capita is a complex problem considering various affecting factors and non-linear relationships. For one of the models we chose neural network to train our model in this project. Artificial Neural Networks have the ability to learn and model non-linear relationships, which is really important for water withdrawal prediction problem.</p>
 <ul>
 <li>Step 1: Data Preprocessing</li>
 </ul>
@@ -202,21 +218,38 @@ Since there are two categorical variables (i.e. country and year), we also do s
 <li>Step 4: Predicting</li>
 </ul>
 <p>After obtaining the best combination of hyperparameter values, we train the neural network using training set (287 examples * 80%) and check the performance of model using validation set (287 examples * 20%). Then we use it to predict the annual water withdrawal per capita in the testing set (123 examples).</p>
-<h3 id="random-forests">3.2 Random Forests</h3>
+<h3 id="random-forest-regression">3.2 Random Forest Regression</h3>
+<p>The other model tested to predict our target variable is a Random Forest Regression (RFR). RFR was selected because we need a non linear model. In this case we want a regression model rather than a classification model because we have numerical values rather than categorical values to predict. One of the shortcomings that could inhibit the accuracy of the model is that a Random Forest Regression cannot predict values that are higher than the values in the training data.</p>
+<ul>
+<li>Step 1: Data Preprocessing</li>
+</ul>
+<p>There are not missing values from our training and testing models. First I looked at a description of the data to make sure there were no constant values that needed to be removed. After that I checked the data types and changed all object variables to integers using one hot encoding. After this I looked at the distribution of the target variable to check for skewness. The target variable had right skewness, therefore I normalized the target variable using a log transformation to improve the model predictions. I split the training data into training data and validation data to prevent overfitting the model to the training data.</p>
+<ul>
+<li>Step 2: Modeling</li>
+</ul>
+<p>The first random forest regression model I made based on adjusting the n-estimaters parameter until I got the highest percent accuracy on the validation data. The accuracy was calculated using the mean absolute error of the predictions compared to the actual values of the validation data. A random state of 42 was added to the model to create consistency.</p>
+<ul>
+<li>Step 3: Hyperparameter Tuning</li>
+</ul>
+<p>To improve the accuracy of the model I used both randomized search cross validation and grid search cross validation. The hyperparemeters tested were n_estimators, min_samples_split, min_samples_leaf, max_features, max_depth, and bootstrap. The randomized search CV was used to narrow down the range of the parameters. Then grid search CV compares all combinations of inputs. I performed the grid search CV and stopped when the accuracy stopped improving. Next I checked the feature importances and checked the accuracy of the model using the four most important features. The accuracy did not change when only the four most important features were used therefore I changed the model to only use those four features in predicting the target variable.</p>
+<ul>
+<li>Step 4: Predicting</li>
+</ul>
+<p>I used the best combination of hyperparemeters from my grid search CV and the four most important features to predict the target variable.</p>
 <h2 id="results">4. Results</h2>
 <h3 id="results-of-neural-network">4.1 Results of Neural Network</h3>
 <p>We use tensorflow to build Neural Network in this project. The default values of hyperparameters are as follows: learning rate = 0.01, batch size = 40, epoch = 50, and dropout rate = 0.1. The performance of this model is shown in Figure 4 to Figure 6. The RMSE of the training data is 174.35 and the RMSE of the testing data is 259.79.</p>
-<div id="fig:0be8cb96-5505-4734-9635-087b95b1fcb5" class="fignos">
+<div id="fig:8a1da72b-3977-4c65-a1d9-0a6e85e3857c" class="fignos">
 <figure>
 <img src="images/before.png" style="width:4in" alt="" /><figcaption><span>Figure 4:</span> <strong>Model performance history</strong></figcaption>
 </figure>
 </div>
-<div id="fig:4820d6c9-a6a1-4e74-9047-2728a5c92861" class="fignos">
+<div id="fig:c7211ecd-8ba5-4e31-95eb-65b2f6238003" class="fignos">
 <figure>
 <img src="images/before_training.png" style="width:4in" alt="" /><figcaption><span>Figure 5:</span> <strong>Predictive performance in training data</strong></figcaption>
 </figure>
 </div>
-<div id="fig:040c3cd8-5517-49b7-bbd4-f27a5ad557ac" class="fignos">
+<div id="fig:a1b20e88-e276-4078-bcc3-35ee1ea4afdb" class="fignos">
 <figure>
 <img src="images/before_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 6:</span> <strong>Predictive performance in validation data</strong></figcaption>
 </figure>
@@ -283,22 +316,22 @@ Since there are two categorical variables (i.e. country and year), we also do s
 </tbody>
 </table>
 </div>
-<div id="fig:87be8e0b-84f5-4cb3-bf92-4020de8e76bf" class="fignos">
+<div id="fig:87261dbf-c4ca-4753-bc9b-6bdf8982a451" class="fignos">
 <figure>
 <img src="images/dropout_0.1.png" style="width:4in" alt="" /><figcaption><span>Figure 7:</span> <strong>Model performance history (dropout rate = 0.1)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:b6b8dc9f-66ee-4245-bcaf-22a13b8ac271" class="fignos">
+<div id="fig:e08dafc6-295a-4dac-a105-132b55330dd6" class="fignos">
 <figure>
 <img src="images/dropout_0.2.png" style="width:4in" alt="" /><figcaption><span>Figure 8:</span> <strong>Model performance history (dropout rate = 0.2)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:25709a02-6dfe-411a-afb8-7fb7e8228974" class="fignos">
+<div id="fig:fcb21325-a5a3-450b-af9d-45667d4f13d5" class="fignos">
 <figure>
 <img src="images/dropout_0.3.png" style="width:4in" alt="" /><figcaption><span>Figure 9:</span> <strong>Model performance history (dropout rate = 0.3)</strong></figcaption>
 </figure>
 </div>
-<p>As dropout rate increases, overfitting problem can be reduced, but the RMSE of both training data and validation do not decrease. Therefore, we still set dropout rate at 0.01, which gives the best performance of the model.
+<p>As dropout rate increases, the overfitting problem can be reduced, but the RMSE of both the training data and the validation do not decrease. Therefore, we still set the dropout rate at 0.01, which gives the best performance of the model.
 So, we find the best combination of hyperparameter values as follows:</p>
 <ul>
 <li>batch size = 64</li>
@@ -306,17 +339,60 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <li>learning rate = 0.005</li>
 <li>dropout rate = 0.1</li>
 </ul>
-<div id="fig:c06ebfc0-64a9-4f14-ad5b-99c37de9d3c2" class="fignos">
-<figure>
-<img src="images/after_training.png" style="width:4in" alt="" /><figcaption><span>Figure 10:</span> <strong>Predictive performance in training data after hyperparameter tuning</strong></figcaption>
-</figure>
-</div>
-<div id="fig:c128dc5f-4507-475d-a65f-63105c0b3756" class="fignos">
-<figure>
-<img src="images/after_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 11:</span> <strong>Predictive performance in validation data after hyperparameter tuning</strong></figcaption>
-</figure>
-</div>
+<p><img src="images/after_training.png" id="fig:" style="width:4in" alt="Predictive performance in training data after hyperparameter tuning" />
+The
+<img src="images/after_validation.png" id="fig:" style="width:4in" alt="Predictive performance in validation data after hyperparameter tuning" /></p>
 <p>Finally, we use this neural network to predict the total annual water withdrawal per capita in the testing dataset, and the Root Mean Squared Error is 144.82.</p>
+<h3 id="results-of-random-forest-regression">4.2 Results of Random Forest Regression</h3>
+<p>The model was built using random forest regressor with the initial hyperparameters set to n-estimators = 100 and random state = 42. The mean absolute error was 0.41 degrees and the percent accuracy was 92.98%.</p>
+<p>Next I used randomized search CV and did two grid search CV to tune the hyperparemeters and find the best combination. Below are the mean absolute error and percent accuracy for each of the attempts.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tuning Attempt</th>
+<th style="text-align: center;">MAE of Validation data</th>
+<th style="text-align: center;">% Accuracy of Validation data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Randomized Search CV</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">93.2%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Grid Search CV 1</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">93.2%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Grid Search CV 2</td>
+<td style="text-align: center;">0.4</td>
+<td style="text-align: center;">93.2%</td>
+</tr>
+</tbody>
+</table>
+<p>As can be seen in the table, the accuracy of the model did not improve much after the first cross validation. The final hyperparamters selected for the model were:</p>
+<ul>
+<li>n estimators: 1000</li>
+<li>min samples split: 2</li>
+<li>min samples leaf: 1</li>
+<li>max features: 3</li>
+<li>max depth: 60</li>
+<li>bootstrap: true</li>
+<li>random state: 42</li>
+</ul>
+<p>After selecting the hyperparameters I next looked at the figure importance and made a plot of the top 12 features to better visualize the weight of each feature on the model.</p>
+<figure>
+<img src="https://user-images.githubusercontent.com/71046085/101267324-03aa3e00-371d-11eb-8c65-4b9b754d9fa3.png" alt="" /><figcaption>Screen Shot 2020-12-05 at 5 11 50 PM</figcaption>
+</figure>
+<p>The top four most important features were % Municipal Water Withdrawal, GDP per Capita, Water Stress, and Dam Capacity per Capita. I wanted to test how the accuracy of the model changed if I only used the top four most important features. I made a new dataframe that only included those four features and used the same hyperparamters as above and tested for the mean absolute error and percent accuracy in the validation data. The mae was 0.41 degrees and the percent accuracy was 93.09%. Since the accuracy changed by 0.11% I decided to go with the simpler model and only include those four features.</p>
+<p>After applying the model to the testing dataframe the final root mean squared error was 264.13 m^3/inhab/yr.</p>
+<h2 id="conclusion">5. Conclusion</h2>
+<p>Comparing the root mean squared error of the two methods used, the Neural Network algorithm had the lower value of root mean squared error. Therefore this model was more accurate at predicting the target variable: annual total water withdrawal per capita. This model had a root mean squared error of 122.08 m^3/inhab/yr, which in the context of the problem is acceptable due to the spread of the data for the target variable. The model could give countries an idea of where to expect their total water withdrawal to be when changing different parameters that were included in the model. To expand on this model, different features could be tested and having more data could improve the accuracy of the model.</p>
+<h2 id="references">6. References</h2>
+<p>AQUASTAT Database  , Food and Agriculture Organization of the United Nations, www.fao.org/nr/water/aquastat/data/query/index.html?lang=en.</p>
+<p>Sahour, Hossein, et al. “A Comparative Analysis of Statistical and Machine Learning Techniques for Mapping the Spatial Distribution of Groundwater Salinity in a Coastal Aquifer.” Journal of Hydrology, Elsevier, 19 July 2020, www.sciencedirect.com/science/article/pii/S0022169420307812.</p>
 <h2 id="basic-formatting">Basic formatting</h2>
 <p><strong>Bold</strong> <strong>text</strong></p>
 <p><span class="semibold">Semi-bold text</span></p>
@@ -390,10 +466,10 @@ two spaces at end of line.</p>
 Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">8</a>]</span>.</p>
 <p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
 <h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">12</a></p>
-<p>Figure <a href="#fig:wide-image">13</a></p>
-<p>Figure <a href="#fig:tall-image">14</a></p>
-<p>Figure <a href="#fig:vector-image">15</a></p>
+<p>Figure <a href="#fig:square-image">10</a></p>
+<p>Figure <a href="#fig:wide-image">11</a></p>
+<p>Figure <a href="#fig:tall-image">12</a></p>
+<p>Figure <a href="#fig:vector-image">13</a></p>
 <p>Table <a href="#tbl:bowling-scores">3</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
@@ -422,25 +498,25 @@ Exporting PDF manuscript</code></pre>
 <h2 id="figures">Figures</h2>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="" /><figcaption><span>Figure 12:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="" /><figcaption><span>Figure 10:</span> <strong>A square image at actual size and with a bottom caption.</strong>
 Loaded from the latest version of image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="" /><figcaption><span>Figure 13:</span> <strong>An image too wide to fit within page at full size.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="" /><figcaption><span>Figure 11:</span> <strong>An image too wide to fit within page at full size.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:tall-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="" /><figcaption><span>Figure 14:</span> <strong>A tall image with a specified height.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="" /><figcaption><span>Figure 12:</span> <strong>A tall image with a specified height.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:vector-image" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="" /><figcaption><span>Figure 15:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
+<img src="https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="" /><figcaption><span>Figure 13:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
 The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
 White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
 </figure>
@@ -522,7 +598,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:aa50339c-633f-4997-b5fb-0af7c21f15d2" class="tablenos">
+<div id="tbl:7269b59f-17dc-4adb-91f4-a33f7134e75e" class="tablenos">
 <table>
 <caption><span>Table 5:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -603,7 +679,7 @@ useful for <em>general information</em> - <a href="https://manubot.org/">manubot
 useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
 <p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
 useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<h2 class="page_break_before" id="references">References</h2>
+<h2 class="page_break_before" id="references-1">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-IhliSZDo">

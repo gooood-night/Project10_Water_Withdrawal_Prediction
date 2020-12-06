@@ -7,12 +7,12 @@
       "random forest"
     ],
     "lang": "en-US",
-    "date-meta": "2020-12-03",
+    "date-meta": "2020-12-06",
     "author-meta": [
       "Kathryn Grace Gunderson",
       "Yanan Chen"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta name=\"citation_title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta property=\"og:title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta property=\"twitter:title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-03\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-03\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Kathryn Grace Gunderson\" />\n<meta name=\"citation_author_institution\" content=\"Civil and Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Yanan Chen\" />\n<meta name=\"citation_author_institution\" content=\"Civil and Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<link rel=\"canonical\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta property=\"og:url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta property=\"twitter:url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta name=\"citation_pdf_url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta name=\"citation_title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta property=\"og:title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta property=\"twitter:title\" content=\"CEE 498 Project 10: Water Withdrawal Prediction\" />\n<meta name=\"dc.date\" content=\"2020-12-06\" />\n<meta name=\"citation_publication_date\" content=\"2020-12-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Kathryn Grace Gunderson\" />\n<meta name=\"citation_author_institution\" content=\"Civil and Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author\" content=\"Yanan Chen\" />\n<meta name=\"citation_author_institution\" content=\"Civil and Environmental Engineering, University of Illinois at Urbana-Champaign\" />\n<link rel=\"canonical\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta property=\"og:url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta property=\"twitter:url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/\" />\n<meta name=\"citation_pdf_url\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -22,7 +22,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "December 3, 2020",
+    "date": "December 6, 2020",
     "authors": [
       {
         "github": null,
@@ -60,19 +60,19 @@
       "repo_slug": "gooood-night/Project10_Water_Withdrawal_Prediction",
       "repo_owner": "gooood-night",
       "repo_name": "Project10_Water_Withdrawal_Prediction",
-      "commit": "4f834d3aff6094f4d3e39c0211d3b53d50d16842",
-      "triggering_commit": "4f834d3aff6094f4d3e39c0211d3b53d50d16842",
-      "build_url": "https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/commit/4f834d3aff6094f4d3e39c0211d3b53d50d16842/checks",
+      "commit": "83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168",
+      "triggering_commit": "83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168",
+      "build_url": "https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/commit/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/checks",
       "job_url": "https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/runs/run3"
     },
     "html_url": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/",
     "pdf_url": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf",
-    "html_url_versioned": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/",
-    "pdf_url_versioned": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/4f834d3aff6094f4d3e39c0211d3b53d50d16842/manuscript.pdf",
+    "html_url_versioned": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/",
+    "pdf_url_versioned": "https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/83a69a3dd7ac4f8f8b3bc886f205a3969cf4d168/manuscript.pdf",
     "manubot_version": "0.4.1",
     "rootstock_commit": "97b294802ffcd39071b6e5b8ab59f60faf4be118",
     "manuscript_stats": {
-      "word_count": 2878
+      "word_count": 4279
     }
   }
 }
