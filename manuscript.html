@@ -47,9 +47,9 @@
   <meta name="citation_fulltext_html_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/" />
   <meta name="citation_pdf_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/" />
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/ce1d4769932ff44e48751373547e5791a70176ad/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/ce1d4769932ff44e48751373547e5791a70176ad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/ce1d4769932ff44e48751373547e5791a70176ad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,9 +63,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/">permalink</a>)
+(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/ce1d4769932ff44e48751373547e5791a70176ad/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/c0b29828aeb46bfa447a0d077792b01195d380c8">gooood-night/Project10_Water_Withdrawal_Prediction@c0b2982</a>
+from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/ce1d4769932ff44e48751373547e5791a70176ad">gooood-night/Project10_Water_Withdrawal_Prediction@ce1d476</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -96,20 +96,20 @@ Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
 In this project, we intend to predict annual total water withdrawal per capita and select 13 variables as features based on previous studies, which provide information about geography, economy, climate, water resource utilities, etc. After variable selection, the raw dataset used includes 1 dependent variable and 13 features that span 200 countries across 8 different five-year periods from 1978 to 2017.</p>
 <h3 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h3>
 <p>Our project aims at predicting water withdrawal per capita. Water withdrawal per capita is affected by many factors, such as water availability, climate, demographics, economics, etc. Let’s first look at the water withdrawal per capita.</p>
-<div id="fig:fafcd9f7-6365-4359-ae4f-c76368b64847" class="fignos">
+<div id="fig:e32b4365-6ac2-4614-b73b-970f96c8cebf" class="fignos">
 <figure>
 <img src="images/histogram_of_total_water_withdrawal.png" style="width:4in" alt="" /><figcaption><span>Figure 1:</span> <strong>Histogram of the target variable</strong></figcaption>
 </figure>
 </div>
 <p>As shown in Figure 1, the distribution of total water withdrawal is not symmetric. For 75% of the entries, the annual total water withdrawal per capita is less than 704.7 m3/inhab/year, while the maximum annual total water withdrawal per capita is 5739 m3/inhab/year. The difference between countries is huge. Let us closely look at the average annual total water withdrawal per capita during 2013-2017 in each country.</p>
-<div id="fig:d6e9e62e-dd3e-44d5-b298-262be075cd91" class="fignos">
+<div id="fig:7874b23f-b873-4d26-99ca-4a67a0205728" class="fignos">
 <figure>
-<img src="images/world.png" style="width:7in" alt="" /><figcaption><span>Figure 2:</span> <strong>Total water withdrawal per capita in the world</strong></figcaption>
+<img src="images/world.png" style="width:6in" alt="" /><figcaption><span>Figure 2:</span> <strong>Total water withdrawal per capita in the world</strong></figcaption>
 </figure>
 </div>
 <p>Although the water withdrawal data during 2013-2017 of many African and west Asian countries is missing, we can find that the water withdrawal per capita varies among countries from Figure 2. For most countries, the total water withdrawal per capita is below 500 m3/inhab/year, but for Canada, the United States, Kazakhstan and Uzbekistan, the value is above 1000 m3/inhab/year.</p>
 <p>We can visualize the missing data in the features by using an msno matrix.</p>
-<div id="fig:2564c0f1-80d3-403e-9322-a237399bffca" class="fignos">
+<div id="fig:d944197d-12b3-4a19-9f6a-7f37237d977a" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/71046085/101259860-1ad33680-36f1-11eb-9512-d677c4d0afb0.png" style="width:8in" alt="" /><figcaption><span>Figure 3:</span> <strong>Missing Data Matrix</strong></figcaption>
 </figure>
@@ -117,25 +117,29 @@ In this project, we intend to predict annual total water withdrawal per capita a
 <p>As we can see above from the msno matrix, the features with the least amount of missing data are cultivated area, GDP per capita, long-term average annual precipitation, population density, total area of the country, and total renewable water resources. This information helps us select which features to include in the model.</p>
 <p>The raw dataset includes 13 numerical independent variables. It is found that “Human Development Index (HDI)” and “Total population with access to safe drinking-water” are two variables with the most missing values. Meanwhile, the correlation coefficients between the target variables and these two independent variables are small. So, these two variables were dropped. After further data cleaning, we had a dataset with 410 samples and 11 numerical features and 2 categorical features for predicting water withdrawal per capita.</p>
 <p>The figure below shows how the 11 independent variables correlate with the target variable and each other. As can be seen, “Long-term average annual precipitation in volume (10^9 m3/year)” and “Total renewable water resources (10^9 m3/year)” are highly related with the correlation coefficient of 0.97. We need to remove one of them for ML model input in data preprocessing.</p>
-<div id="fig:a4735f96-36e6-423b-a179-f0b754c087f0" class="fignos">
+<div id="fig:5766f6fd-e1d1-4cc2-bf8a-ee9ee2b0d0cd" class="fignos">
 <figure>
 <img src="images/variables_correlation_matrix.png" style="width:6.5in" alt="" /><figcaption><span>Figure 4:</span> <strong>Correlation coefficient</strong></figcaption>
 </figure>
 </div>
 <p>As mentioned previously most of the values for total water withdrawal per capita around below 500 m^3/inhab/yr. To further explore if any features correlate with high and low values of total water withdrawal the average value for each feature was found for each country over the different time periods. Then the data was broken up into countries that have values below 400 m^3/inhab/yr and above that value. Then we looked at the distribution of the features above and below to see if any conclusions could be made about how the features relate to the total water withdrawal. Below are histograms of the features that correspond to countries with an average water withdrawal per capita less than 400.</p>
-<p><img src="https://user-images.githubusercontent.com/71046085/101262710-490f4100-3706-11eb-8378-ba2dfff48d62.png" style="width:5.5in" />
-<img src="https://user-images.githubusercontent.com/71046085/101262745-81168400-3706-11eb-8bcc-d05512a2208f.png" style="width:5.5in" />
-<img src="https://user-images.githubusercontent.com/71046085/101262764-94295400-3706-11eb-9030-375fb2650999.png" style="width:5.5in" /></p>
+<p><img src="https://user-images.githubusercontent.com/71046085/101262710-490f4100-3706-11eb-8378-ba2dfff48d62.png" style="width:6in" />
+<img src="https://user-images.githubusercontent.com/71046085/101262745-81168400-3706-11eb-8bcc-d05512a2208f.png" style="width:5in" />
+<img src="https://user-images.githubusercontent.com/71046085/101262764-94295400-3706-11eb-9030-375fb2650999.png" style="width:6in" /></p>
+<div id="fig:a2a6f8d4-23d2-4929-b108-876c6805a77f" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/71046085/101262768-9f7c7f80-3706-11eb-874e-c221a8b0fc47.png" style="width:5.5in" alt="" /><figcaption><strong>Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita less than 400 m^3/inhab/yr</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/71046085/101262768-9f7c7f80-3706-11eb-874e-c221a8b0fc47.png" style="width:5.5in" alt="" /><figcaption><span>Figure 5:</span> <strong>Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita less than 400 m^3/inhab/yr</strong></figcaption>
 </figure>
+</div>
 <p>Below are histograms of the features that correspond to countries with an average water withdrawal per capita greater than 400.</p>
 <p><img src="https://user-images.githubusercontent.com/71046085/101263023-0484a500-3708-11eb-966c-5519797a8146.png" id="fig:" style="width:5.5in" />
 <img src="https://user-images.githubusercontent.com/71046085/101263025-05b5d200-3708-11eb-9b4e-bde36fda62c9.png" style="width:5.5in" />
 <img src="https://user-images.githubusercontent.com/71046085/101263027-064e6880-3708-11eb-918c-79874eb90be4.png" style="width:5.5in" /></p>
+<div id="fig:a99d45bb-52b8-4003-9032-40c5c7231fb2" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/71046085/101263029-077f9580-3708-11eb-9aed-73d07537a238.png" style="width:5.5in" alt="" /><figcaption><strong>Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita more than 400 m^3/inhab/yr</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/71046085/101263029-077f9580-3708-11eb-9aed-73d07537a238.png" style="width:5.5in" alt="" /><figcaption><span>Figure 6:</span> <strong>Distribution of Features Corresponding to Countries with Average Water Withdrawal per Capita more than 400 m^3/inhab/yr</strong></figcaption>
 </figure>
+</div>
 <p>Comparing the set of histograms for the countries that have an average water withdrawal lower than 400 m^3/inhab/year and those that have higher than 400 there are some differences that could help predict the average water withdrawal. The agricultural water withdrawal, population density, cultivated area, and GDP tends to be higher for countries with a higher average water withdrawal than 500. Total area of the country, municipal water withdrawal tends to be higher for countries with a lower average water withdrawal than 500.</p>
 <h2 id="methods">3. Methods</h2>
 <h3 id="neural-network">3.1 Neural Network</h3>
@@ -178,19 +182,19 @@ Since there are two categorical variables (i.e. country and year), we also did 
 <h2 id="results">4. Results</h2>
 <h3 id="results-of-neural-network">4.1 Results of Neural Network</h3>
 <p>We used tensorflow to build Neural Network in this project. The default values of hyperparameters are as follows: learning rate = 0.01, batch size = 40, epoch = 50, and dropout rate = 0.1. The performance of this model is shown in figures. The RMSE of the training data was 174.35 and the RMSE of the testing data was 259.79.</p>
-<div id="fig:29371d45-ed01-405b-ae4d-73a1690fc192" class="fignos">
+<div id="fig:b3e9c2a2-c0fa-47c9-9fee-dbfe26c682b7" class="fignos">
 <figure>
-<img src="images/before.png" style="width:4in" alt="" /><figcaption><span>Figure 5:</span> <strong>Model performance history</strong></figcaption>
+<img src="images/before.png" style="width:4in" alt="" /><figcaption><span>Figure 7:</span> <strong>Model performance history</strong></figcaption>
 </figure>
 </div>
-<div id="fig:3226b3e6-5a2b-4b25-b7a0-3bc3cde86a23" class="fignos">
+<div id="fig:26de7d50-24f5-475b-809e-02805d43e0ea" class="fignos">
 <figure>
-<img src="images/before_training.png" style="width:4in" alt="" /><figcaption><span>Figure 6:</span> <strong>Predictive performance in training data</strong></figcaption>
+<img src="images/before_training.png" style="width:4in" alt="" /><figcaption><span>Figure 8:</span> <strong>Predictive performance in training data</strong></figcaption>
 </figure>
 </div>
-<div id="fig:acc1e0bc-aa83-4044-bc23-7a82224549d4" class="fignos">
+<div id="fig:3d52c1c0-ece8-448d-8e0c-8b2d9cb8aded" class="fignos">
 <figure>
-<img src="images/before_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 7:</span> <strong>Predictive performance in validation data</strong></figcaption>
+<img src="images/before_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 9:</span> <strong>Predictive performance in validation data</strong></figcaption>
 </figure>
 </div>
 <p>We used Grid Search to tune the hyperparameters to improve the model performance. The results are shown in Table 1.</p>
@@ -255,19 +259,19 @@ Since there are two categorical variables (i.e. country and year), we also did 
 </tbody>
 </table>
 </div>
-<div id="fig:cbb30b05-4c2c-4640-b74f-f658669b6db7" class="fignos">
+<div id="fig:822bfb55-42d6-405b-91a4-efda006fe8e5" class="fignos">
 <figure>
-<img src="images/dropout_0.1.png" style="width:4in" alt="" /><figcaption><span>Figure 8:</span> <strong>Model performance history (dropout rate = 0.1)</strong></figcaption>
+<img src="images/dropout_0.1.png" style="width:4in" alt="" /><figcaption><span>Figure 10:</span> <strong>Model performance history (dropout rate = 0.1)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:d148066b-5e94-4cdd-bc37-ad6077dfbd15" class="fignos">
+<div id="fig:32d210fc-8c96-4dba-8222-33fcb2f25e67" class="fignos">
 <figure>
-<img src="images/dropout_0.2.png" style="width:4in" alt="" /><figcaption><span>Figure 9:</span> <strong>Model performance history (dropout rate = 0.2)</strong></figcaption>
+<img src="images/dropout_0.2.png" style="width:4in" alt="" /><figcaption><span>Figure 11:</span> <strong>Model performance history (dropout rate = 0.2)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:ada4ce4c-a95b-4a36-844c-389b8e69ab78" class="fignos">
+<div id="fig:03beedea-d30e-4e1d-a301-c0929ac20c3d" class="fignos">
 <figure>
-<img src="images/dropout_0.3.png" style="width:4in" alt="" /><figcaption><span>Figure 10:</span> <strong>Model performance history (dropout rate = 0.3)</strong></figcaption>
+<img src="images/dropout_0.3.png" style="width:4in" alt="" /><figcaption><span>Figure 12:</span> <strong>Model performance history (dropout rate = 0.3)</strong></figcaption>
 </figure>
 </div>
 <p>As dropout rate increased, the overfitting problem can be reduced, but the RMSE of both the training data and the validation did not decrease. Therefore, we still set the dropout rate at 0.01, which gave the best performance of the model.
@@ -278,14 +282,14 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <li>learning rate = 0.005</li>
 <li>dropout rate = 0.1</li>
 </ul>
-<div id="fig:d42138b6-6785-4cf6-b546-1aaf6dac4489" class="fignos">
+<div id="fig:92bf8e61-3733-4e5a-8023-e490d8dfd9c4" class="fignos">
 <figure>
-<img src="images/after_training.png" style="width:4in" alt="" /><figcaption><span>Figure 11:</span> <strong>Predictive performance in training data after hyperparameter tuning</strong></figcaption>
+<img src="images/after_training.png" style="width:4in" alt="" /><figcaption><span>Figure 13:</span> <strong>Predictive performance in training data after hyperparameter tuning</strong></figcaption>
 </figure>
 </div>
-<div id="fig:e5eaf72f-9d91-4c4b-9753-f47a1259ca45" class="fignos">
+<div id="fig:d7b7e695-188d-42bc-8349-ddf024cdc6f6" class="fignos">
 <figure>
-<img src="images/after_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 12:</span> <strong>Predictive performance in validation data after hyperparameter tuning</strong></figcaption>
+<img src="images/after_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 14:</span> <strong>Predictive performance in validation data after hyperparameter tuning</strong></figcaption>
 </figure>
 </div>
 <p>Finally, we used this neural network to predict the total annual water withdrawal per capita in the testing dataset, and the Root Mean Squared Error was 144.82.</p>
@@ -333,9 +337,9 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <li>random state: 42</li>
 </ul>
 <p>After selecting the hyperparameters I next looked at the figure importance and made a plot of the top 12 features to better visualize the weight of each feature on the model.</p>
-<div id="fig:bb895db5-e0fc-49ac-8e11-2241a2a74815" class="fignos">
+<div id="fig:d3e4e4fa-f375-4508-b915-73bf565c231e" class="fignos">
 <figure>
-<img src="https://user-images.githubusercontent.com/71046085/101267324-03aa3e00-371d-11eb-8c65-4b9b754d9fa3.png" alt="" /><figcaption><span>Figure 13:</span> <strong>Top 12 variable importances</strong></figcaption>
+<img src="https://user-images.githubusercontent.com/71046085/101267324-03aa3e00-371d-11eb-8c65-4b9b754d9fa3.png" alt="" /><figcaption><span>Figure 15:</span> <strong>Top 12 variable importances</strong></figcaption>
 </figure>
 </div>
 <p>The top four most important features were % Municipal Water Withdrawal, GDP per Capita, Water Stress, and Dam Capacity per Capita. We wanted to test how the accuracy of the model changed if we only used the top four most important features. We made a new dataframe that only included those four features and used the same hyperparamters as above and tested for the mean absolute error and percent accuracy in the validation data. The mae was 0.41 degrees and the percent accuracy was 93.09%. Since the accuracy changed by 0.11%, We decided to go with the simpler model and only include those four features.</p>

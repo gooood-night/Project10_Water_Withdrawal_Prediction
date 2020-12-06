@@ -1,6 +1,6 @@
 algorthims
 AQUASTAT
-capita
+Capita
 Champaign
 dataframe
 dataset
@@ -16,7 +16,7 @@ HDI
 Hossein
 hydrological
 hyperparameter
-hyperparameters
+Hyperparameters
 hyperparamters
 hyperparemeters
 importances
