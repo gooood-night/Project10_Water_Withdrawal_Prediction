@@ -47,9 +47,9 @@
   <meta name="citation_fulltext_html_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/" />
   <meta name="citation_pdf_url" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/" />
-  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
+  <meta name="manubot_html_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/" />
+  <meta name="manubot_pdf_url_versioned" content="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -63,9 +63,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/2086c435af56210ad41040bbda505d9c1220aed7/">permalink</a>)
+(<a href="https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/bf0d429a8f6544fdd644c71746b0691461a11a73/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/2086c435af56210ad41040bbda505d9c1220aed7">gooood-night/Project10_Water_Withdrawal_Prediction@2086c43</a>
+from <a href="https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/bf0d429a8f6544fdd644c71746b0691461a11a73">gooood-night/Project10_Water_Withdrawal_Prediction@bf0d429</a>
 on December 6, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -96,13 +96,13 @@ Civil and Environmental Engineering, University of Illinois at Urbana-Champaign
 In this project, we intend to predict annual total water withdrawal per capita and select 13 variables as features based on previous studies, which provide information about geography, economy, climate, water resource utilities, etc. After variable selection, the raw dataset used includes 1 dependent variable and 13 features that span 200 countries across 8 different five-year periods from 1978 to 2017.</p>
 <h3 id="exploratory-data-analysis">2.2 Exploratory Data Analysis</h3>
 <p>Our project aims at predicting water withdrawal per capita. Water withdrawal per capita is affected by many factors, such as water availability, climate, demographics, economics, etc. Let’s first look at the water withdrawal per capita.</p>
-<div id="fig:b07e84ed-391c-4a10-adcf-87e9022e063d" class="fignos">
+<div id="fig:16f1d47f-c953-41e9-9918-0383576e303c" class="fignos">
 <figure>
 <img src="images/histogram_of_total_water_withdrawal.png" style="width:4in" alt="" /><figcaption><span>Figure 1:</span> <strong>Histogram of the target variable</strong></figcaption>
 </figure>
 </div>
 <p>As shown in Figure 1, the distribution of total water withdrawal is not symmetric. For 75% of the entries, the annual total water withdrawal per capita is less than 704.7 m3/inhab/year, while the maximum annual total water withdrawal per capita is 5739 m3/inhab/year. The difference between countries is huge. Let us closely look at the average annual total water withdrawal per capita during 2013-2017 in each country.</p>
-<div id="fig:250c734c-91d3-4f3d-956c-9d101177161a" class="fignos">
+<div id="fig:968d2d54-3bf3-41b9-9bc6-88d7c40d4f89" class="fignos">
 <figure>
 <img src="images/world.png" style="width:7in" alt="" /><figcaption><span>Figure 2:</span> <strong>Total water withdrawal per capita in the world</strong></figcaption>
 </figure>
@@ -114,7 +114,7 @@ In this project, we intend to predict annual total water withdrawal per capita a
 <p>As we can see above from the msno matrix, the features with the least amount of missing data are cultivated area, GDP per capita, long-term average annual precipitation, population density, total area of the country, and total renewable water resources. This information helps us select which features to include in the model.</p>
 <p>The raw dataset includes 13 numerical independent variables. It is found that “Human Development Index (HDI)” and “Total population with access to safe drinking-water” are two variables with the most missing values. Meanwhile, the correlation coefficients between the target variables and these two independent variables are small. So, these two variables were dropped. After further data cleaning, we had a dataset with 410 samples and 11 numerical features and 2 categorical features for predicting water withdrawal per capita.</p>
 <p>The figure below shows how the 11 independent variables correlate with the target variable and each other. As can be seen, “Long-term average annual precipitation in volume (10^9 m3/year)” and “Total renewable water resources (10^9 m3/year)” are highly related with the correlation coefficient of 0.97. We need to remove one of them for ML model input in data preprocessing.</p>
-<div id="fig:a555c894-8bef-4d72-9984-1a2d78acba5f" class="fignos">
+<div id="fig:8c10dcf5-068b-42bf-93ac-019b07fc319a" class="fignos">
 <figure>
 <img src="images/variables_correlation_matrix.png" style="width:6.5in" alt="" /><figcaption><span>Figure 3:</span> <strong>Correlation coefficient</strong></figcaption>
 </figure>
@@ -171,17 +171,17 @@ Since there are two categorical variables (i.e. country and year), we also did 
 <h2 id="results">4. Results</h2>
 <h3 id="results-of-neural-network">4.1 Results of Neural Network</h3>
 <p>We used tensorflow to build Neural Network in this project. The default values of hyperparameters are as follows: learning rate = 0.01, batch size = 40, epoch = 50, and dropout rate = 0.1. The performance of this model is shown in figures. The RMSE of the training data was 174.35 and the RMSE of the testing data was 259.79.</p>
-<div id="fig:ae7ab385-f2a3-4c0f-9aa3-c51a44586e01" class="fignos">
+<div id="fig:328c0f2c-eeec-4b4c-a015-cf0dbe77b176" class="fignos">
 <figure>
 <img src="images/before.png" style="width:4in" alt="" /><figcaption><span>Figure 4:</span> <strong>Model performance history</strong></figcaption>
 </figure>
 </div>
-<div id="fig:76ebfdbf-7613-45a6-b5a5-da969acf247f" class="fignos">
+<div id="fig:2af23c79-3706-409c-8668-aed79541b04d" class="fignos">
 <figure>
 <img src="images/before_training.png" style="width:4in" alt="" /><figcaption><span>Figure 5:</span> <strong>Predictive performance in training data</strong></figcaption>
 </figure>
 </div>
-<div id="fig:c3f7604a-003f-47c1-9e47-70fb93d776b9" class="fignos">
+<div id="fig:6b077e32-6482-4f98-b31e-9f5e350e6e7a" class="fignos">
 <figure>
 <img src="images/before_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 6:</span> <strong>Predictive performance in validation data</strong></figcaption>
 </figure>
@@ -248,17 +248,17 @@ Since there are two categorical variables (i.e. country and year), we also did 
 </tbody>
 </table>
 </div>
-<div id="fig:c5e1cb5d-cdfc-4077-af0a-a478f0ac0ca2" class="fignos">
+<div id="fig:a9558e73-61ae-48a3-991b-a04aa88a2795" class="fignos">
 <figure>
 <img src="images/dropout_0.1.png" style="width:4in" alt="" /><figcaption><span>Figure 7:</span> <strong>Model performance history (dropout rate = 0.1)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:27def249-28db-4ae9-886f-1b23c012eb9d" class="fignos">
+<div id="fig:b828e791-8db4-45e2-96b9-6f8f09aa71bf" class="fignos">
 <figure>
 <img src="images/dropout_0.2.png" style="width:4in" alt="" /><figcaption><span>Figure 8:</span> <strong>Model performance history (dropout rate = 0.2)</strong></figcaption>
 </figure>
 </div>
-<div id="fig:92a01a27-f940-4689-bea1-dceb64f304f5" class="fignos">
+<div id="fig:2afddd73-04ce-40b7-8a27-e1949cdc693c" class="fignos">
 <figure>
 <img src="images/dropout_0.3.png" style="width:4in" alt="" /><figcaption><span>Figure 9:</span> <strong>Model performance history (dropout rate = 0.3)</strong></figcaption>
 </figure>
@@ -271,12 +271,12 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <li>learning rate = 0.005</li>
 <li>dropout rate = 0.1</li>
 </ul>
-<div id="fig:3edaf72e-8d76-48ce-9033-47d8103970e3" class="fignos">
+<div id="fig:7589b89d-5790-43a5-ac96-6f9cfb3cc36e" class="fignos">
 <figure>
 <img src="images/after_training.png" style="width:4in" alt="" /><figcaption><span>Figure 10:</span> <strong>Predictive performance in training data after hyperparameter tuning</strong></figcaption>
 </figure>
 </div>
-<div id="fig:ceb4c431-c4fe-4dda-92a5-813b6c7a379a" class="fignos">
+<div id="fig:ebaa8569-d284-43ec-9b1c-de308c345822" class="fignos">
 <figure>
 <img src="images/after_validation.png" style="width:4in" alt="" /><figcaption><span>Figure 11:</span> <strong>Predictive performance in validation data after hyperparameter tuning</strong></figcaption>
 </figure>
@@ -326,7 +326,7 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <li>random state: 42</li>
 </ul>
 <p>After selecting the hyperparameters I next looked at the figure importance and made a plot of the top 12 features to better visualize the weight of each feature on the model.</p>
-<div id="fig:b0bfa5f8-4653-4a67-9ad8-6ca7c0cf7584" class="fignos">
+<div id="fig:c88c8eca-6723-4dbb-9f54-912d1171f507" class="fignos">
 <figure>
 <img src="https://user-images.githubusercontent.com/71046085/101267324-03aa3e00-371d-11eb-8c65-4b9b754d9fa3.png" alt="" /><figcaption><span>Figure 12:</span> <strong>Top 12 variable importances</strong></figcaption>
 </figure>
@@ -339,11 +339,6 @@ So, we find the best combination of hyperparameter values as follows:</p>
 <p>AQUASTAT Database  , Food and Agriculture Organization of the United Nations, www.fao.org/nr/water/aquastat/data/query/index.html?lang=en.</p>
 <p>Sahour, Hossein, et al. “A Comparative Analysis of Statistical and Machine Learning Techniques for Mapping the Spatial Distribution of Groundwater Salinity in a Coastal Aquifer.” Journal of Hydrology, Elsevier, 19 July 2020, www.sciencedirect.com/science/article/pii/S0022169420307812.</p>
 <p>Villarin, M. C., &amp; Rodriguez-Galiano, V. F. (2019). Machine learning for modeling water demand. Journal of Water Resources Planning and Management, 145(5), 04019017.</p>
-<h2 class="page_break_before" id="references-1">References</h2>
-<!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
-
-</div>
 <!-- default theme -->
 
 <style>
