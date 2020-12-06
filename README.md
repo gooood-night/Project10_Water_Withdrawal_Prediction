@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/tree/gh-pages) branch hosts the contents of this directory at <https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/>.
-The permalink for this webpage version is <https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/c0b29828aeb46bfa447a0d077792b01195d380c8/>.
+The permalink for this webpage version is <https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/ce1d4769932ff44e48751373547e5791a70176ad/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://gooood-night.github.io/Project10_Water_Withdrawal_Prediction/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c0b29828aeb46bfa447a0d077792b01195d380c8`](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/commit/c0b29828aeb46bfa447a0d077792b01195d380c8).
+[`ce1d4769932ff44e48751373547e5791a70176ad`](https://github.com/gooood-night/Project10_Water_Withdrawal_Prediction/commit/ce1d4769932ff44e48751373547e5791a70176ad).
